@@ -1,4 +1,6 @@
-Step 1: this is for "order-service" Microservices ... 
+Step 1: First  run ... eureka-naming-server 
+
+Step 2: this is for "order-service" Microservices ... 
 
 goto postman ... select POST and  http://localhost:8081/order-service/order-item
 goto Body ... select "raw" and "JSON" 
@@ -9,7 +11,7 @@ goto Body ... select "raw" and "JSON"
     "quantity": "10"
 } 
 
-Step 2: this is another microservic i.e. "order-item-service"  and this is responsible to get the data from "order-service" microservices
+Step 3: this is another microservic i.e. "order-item-service"  and this is responsible to get the data from "order-service" microservices
 goto browser and enter below URL and execute 
     http://localhost:8082/order-item-service/allOrderItems
 
